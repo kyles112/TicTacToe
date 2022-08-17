@@ -7,18 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83E269628ACD6B2002DAD0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F83E269528ACD6B2002DAD0B /* GoogleService-Info.plist */; };
+		F83E269928ACD7A1002DAD0B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F83E269828ACD7A1002DAD0B /* FirebaseFirestore */; };
+		F83E269B28ACD7A1002DAD0B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F83E269A28ACD7A1002DAD0B /* FirebaseFirestoreSwift */; };
 		F8A7C04828AC14AE001D4E6A /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C04728AC14AE001D4E6A /* TicTacToeApp.swift */; };
-		F8A7C04A28AC14AE001D4E6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C04928AC14AE001D4E6A /* ContentView.swift */; };
+		F8A7C04A28AC14AE001D4E6A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C04928AC14AE001D4E6A /* HomeView.swift */; };
 		F8A7C04C28AC14AF001D4E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A7C04B28AC14AF001D4E6A /* Assets.xcassets */; };
 		F8A7C04F28AC14AF001D4E6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A7C04E28AC14AF001D4E6A /* Preview Assets.xcassets */; };
+		F8A7C05628AC1691001D4E6A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C05528AC1691001D4E6A /* GameView.swift */; };
+		F8A7C05828AC17AE001D4E6A /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C05728AC17AE001D4E6A /* GameButton.swift */; };
+		F8A7C05A28AC18E9001D4E6A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C05928AC18E9001D4E6A /* HomeViewModel.swift */; };
+		F8A7C06028AC1F0A001D4E6A /* GameSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C05F28AC1F0A001D4E6A /* GameSquareView.swift */; };
+		F8A7C06228AC1FC8001D4E6A /* PlayerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C06128AC1FC8001D4E6A /* PlayerIndicatorView.swift */; };
+		F8A7C06428AC2258001D4E6A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C06328AC2258001D4E6A /* LoadingView.swift */; };
+		F8A7C06628AC2390001D4E6A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C06528AC2390001D4E6A /* GameViewModel.swift */; };
+		F8A7C06828AC2742001D4E6A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C06728AC2742001D4E6A /* Model.swift */; };
+		F8A7C06B28AC3EC2001D4E6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C06A28AC3EC2001D4E6A /* User.swift */; };
+		F8A7C07A28AC4B35001D4E6A /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C07928AC4B35001D4E6A /* FirebaseReference.swift */; };
+		F8A7C07D28AC4CE2001D4E6A /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C07C28AC4CE2001D4E6A /* FirebaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F83E269528ACD6B2002DAD0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8A7C04428AC14AE001D4E6A /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A7C04728AC14AE001D4E6A /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
-		F8A7C04928AC14AE001D4E6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8A7C04928AC14AE001D4E6A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F8A7C04B28AC14AF001D4E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A7C04E28AC14AF001D4E6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8A7C05528AC1691001D4E6A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		F8A7C05728AC17AE001D4E6A /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		F8A7C05928AC18E9001D4E6A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F8A7C05F28AC1F0A001D4E6A /* GameSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquareView.swift; sourceTree = "<group>"; };
+		F8A7C06128AC1FC8001D4E6A /* PlayerIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerIndicatorView.swift; sourceTree = "<group>"; };
+		F8A7C06328AC2258001D4E6A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F8A7C06528AC2390001D4E6A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F8A7C06728AC2742001D4E6A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F8A7C06A28AC3EC2001D4E6A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F8A7C07928AC4B35001D4E6A /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		F8A7C07C28AC4CE2001D4E6A /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83E269928ACD7A1002DAD0B /* FirebaseFirestore in Frameworks */,
+				F83E269B28ACD7A1002DAD0B /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +63,7 @@
 		F8A7C03B28AC14AE001D4E6A = {
 			isa = PBXGroup;
 			children = (
+				F83E269528ACD6B2002DAD0B /* GoogleService-Info.plist */,
 				F8A7C04628AC14AE001D4E6A /* TicTacToe */,
 				F8A7C04528AC14AE001D4E6A /* Products */,
 			);
@@ -52,7 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				F8A7C04728AC14AE001D4E6A /* TicTacToeApp.swift */,
-				F8A7C04928AC14AE001D4E6A /* ContentView.swift */,
+				F8A7C07B28AC4B46001D4E6A /* FirebaseHelpers */,
+				F8A7C06928AC2759001D4E6A /* Model */,
+				F8A7C05D28AC1A8E001D4E6A /* Views */,
+				F8A7C05E28AC1AA9001D4E6A /* SecondaryViews */,
 				F8A7C04B28AC14AF001D4E6A /* Assets.xcassets */,
 				F8A7C04D28AC14AF001D4E6A /* Preview Content */,
 			);
@@ -65,6 +97,63 @@
 				F8A7C04E28AC14AF001D4E6A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8A7C05B28AC1A4D001D4E6A /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				F8A7C04928AC14AE001D4E6A /* HomeView.swift */,
+				F8A7C05928AC18E9001D4E6A /* HomeViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		F8A7C05C28AC1A64001D4E6A /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				F8A7C05528AC1691001D4E6A /* GameView.swift */,
+				F8A7C06528AC2390001D4E6A /* GameViewModel.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		F8A7C05D28AC1A8E001D4E6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8A7C05B28AC1A4D001D4E6A /* HomeView */,
+				F8A7C05C28AC1A64001D4E6A /* GameView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8A7C05E28AC1AA9001D4E6A /* SecondaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				F8A7C05728AC17AE001D4E6A /* GameButton.swift */,
+				F8A7C05F28AC1F0A001D4E6A /* GameSquareView.swift */,
+				F8A7C06128AC1FC8001D4E6A /* PlayerIndicatorView.swift */,
+				F8A7C06328AC2258001D4E6A /* LoadingView.swift */,
+			);
+			path = SecondaryViews;
+			sourceTree = "<group>";
+		};
+		F8A7C06928AC2759001D4E6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8A7C06728AC2742001D4E6A /* Model.swift */,
+				F8A7C06A28AC3EC2001D4E6A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8A7C07B28AC4B46001D4E6A /* FirebaseHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8A7C07928AC4B35001D4E6A /* FirebaseReference.swift */,
+				F8A7C07C28AC4CE2001D4E6A /* FirebaseService.swift */,
+			);
+			name = FirebaseHelpers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +172,10 @@
 			dependencies = (
 			);
 			name = TicTacToe;
+			packageProductDependencies = (
+				F83E269828ACD7A1002DAD0B /* FirebaseFirestore */,
+				F83E269A28ACD7A1002DAD0B /* FirebaseFirestoreSwift */,
+			);
 			productName = TicTacToe;
 			productReference = F8A7C04428AC14AE001D4E6A /* TicTacToe.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +204,9 @@
 				Base,
 			);
 			mainGroup = F8A7C03B28AC14AE001D4E6A;
+			packageReferences = (
+				F83E269728ACD7A1002DAD0B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F8A7C04528AC14AE001D4E6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +223,7 @@
 			files = (
 				F8A7C04F28AC14AF001D4E6A /* Preview Assets.xcassets in Resources */,
 				F8A7C04C28AC14AF001D4E6A /* Assets.xcassets in Resources */,
+				F83E269628ACD6B2002DAD0B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +234,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8A7C04A28AC14AE001D4E6A /* ContentView.swift in Sources */,
+				F8A7C06628AC2390001D4E6A /* GameViewModel.swift in Sources */,
+				F8A7C04A28AC14AE001D4E6A /* HomeView.swift in Sources */,
+				F8A7C06228AC1FC8001D4E6A /* PlayerIndicatorView.swift in Sources */,
+				F8A7C05828AC17AE001D4E6A /* GameButton.swift in Sources */,
+				F8A7C05628AC1691001D4E6A /* GameView.swift in Sources */,
+				F8A7C06828AC2742001D4E6A /* Model.swift in Sources */,
+				F8A7C06028AC1F0A001D4E6A /* GameSquareView.swift in Sources */,
+				F8A7C07D28AC4CE2001D4E6A /* FirebaseService.swift in Sources */,
+				F8A7C06428AC2258001D4E6A /* LoadingView.swift in Sources */,
+				F8A7C05A28AC18E9001D4E6A /* HomeViewModel.swift in Sources */,
 				F8A7C04828AC14AE001D4E6A /* TicTacToeApp.swift in Sources */,
+				F8A7C07A28AC4B35001D4E6A /* FirebaseReference.swift in Sources */,
+				F8A7C06B28AC3EC2001D4E6A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +447,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F83E269728ACD7A1002DAD0B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F83E269828ACD7A1002DAD0B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F83E269728ACD7A1002DAD0B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F83E269A28ACD7A1002DAD0B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F83E269728ACD7A1002DAD0B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F8A7C03C28AC14AE001D4E6A /* Project object */;
 }
