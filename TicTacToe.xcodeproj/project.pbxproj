@@ -25,6 +25,7 @@
 		F8A7C06B28AC3EC2001D4E6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C06A28AC3EC2001D4E6A /* User.swift */; };
 		F8A7C07A28AC4B35001D4E6A /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C07928AC4B35001D4E6A /* FirebaseReference.swift */; };
 		F8A7C07D28AC4CE2001D4E6A /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7C07C28AC4CE2001D4E6A /* FirebaseService.swift */; };
+		F8C9880228AEB70300B026DC /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9880128AEB70300B026DC /* AlertItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		F8A7C06A28AC3EC2001D4E6A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F8A7C07928AC4B35001D4E6A /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		F8A7C07C28AC4CE2001D4E6A /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		F8C9880128AEB70300B026DC /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				F8A7C06728AC2742001D4E6A /* Model.swift */,
 				F8A7C06A28AC3EC2001D4E6A /* User.swift */,
+				F8C9880128AEB70300B026DC /* AlertItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				F8A7C05628AC1691001D4E6A /* GameView.swift in Sources */,
 				F8A7C06828AC2742001D4E6A /* Model.swift in Sources */,
 				F8A7C06028AC1F0A001D4E6A /* GameSquareView.swift in Sources */,
+				F8C9880228AEB70300B026DC /* AlertItem.swift in Sources */,
 				F8A7C07D28AC4CE2001D4E6A /* FirebaseService.swift in Sources */,
 				F8A7C06428AC2258001D4E6A /* LoadingView.swift in Sources */,
 				F8A7C05A28AC18E9001D4E6A /* HomeViewModel.swift in Sources */,

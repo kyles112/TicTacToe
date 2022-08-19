@@ -19,11 +19,13 @@ struct GameView: View {
                 Text("Waiting for the player")
                 Button {
                     mode.wrappedValue.dismiss()
+                    viewModel.quitGame()
                 } label: {
                     GameButton(title: "Quit", backgroundColor: Color(.systemRed))
                 }
-                LoadingView()
-                
+                if viewModel.game?.player2Id == "" {
+                    LoadingView()
+                }
                 Spacer()
                 
                 VStack {
@@ -38,6 +40,20 @@ struct GameView: View {
                             }
                         }
                     }
+                }
+                .disabled(viewModel.checkForGameBoardStatus())
+                .padding()
+                .alert(item: $viewModel.alertItem) { alertItem in
+                    alertItem.isForQuit ? Alert(title: alertItem.title, message: alertItem.message, dismissButton: .destructive(alertItem.buttonTitle, action: {
+                        self.mode.wrappedValue.dismiss()
+                        viewModel.quitGame()
+                    }))
+                    :  Alert(title: alertItem.title, message: alertItem.message, primaryButton: .default(alertItem.buttonTitle, action: {
+                        viewModel.resetGame()
+                    }), secondaryButton: .destructive(Text("Quit"), action: {
+                        self.mode.wrappedValue.dismiss()
+                        viewModel.quitGame()
+                    }))
                 }
             }
         }
