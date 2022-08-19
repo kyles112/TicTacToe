@@ -19,8 +19,14 @@ final class GameViewModel: ObservableObject {
     @Published var game: Game? {
         didSet {
             checkIfGameIsOver()
+            
+            if game == nil { updateGameNoticationFor(.finished) } else {
+                game?.player2Id == "" ? updateGameNoticationFor(.waitingForPlayer) :
+                updateGameNoticationFor(.started)
+            }
         }
     }
+    @Published var gameNotification = GameNotification.waitingForPlayer
     @Published var currentUser: User!
     @Published var alertItem: AlertItem?
     
@@ -59,7 +65,6 @@ final class GameViewModel: ObservableObject {
         
         // check for win
         if checkForWinCondition(for: isPlayerOne(), in: game!.moves) {
-            print("you have won!")
             game!.winningPlayerId = currentUser.id
             FirebaseService.shared.updateGame(game!)
             return
@@ -67,7 +72,6 @@ final class GameViewModel: ObservableObject {
         
         // check for draw
         if checkForDraw(in: game!.moves) {
-            print("you have drawn")
             game!.winningPlayerId = "0"
             FirebaseService.shared.updateGame(game!)
             return
@@ -142,6 +146,18 @@ final class GameViewModel: ObservableObject {
         
         FirebaseService.shared.updateGame(game!)
     }
+
+    func updateGameNoticationFor(_ state: GameState) {
+        
+        switch state {
+        case .started:
+            gameNotification = GameNotification.gameHasStarted
+        case .waitingForPlayer:
+            gameNotification = GameNotification.waitingForPlayer
+        case .finished:
+            gameNotification = GameNotification.gameFinished
+        }
+    }
     
     //Mark: - User object
     
@@ -151,7 +167,7 @@ final class GameViewModel: ObservableObject {
             let data = try JSONEncoder().encode(currentUser)
             userData = data
         } catch {
-            print("couldn't encode user")
+            print("Error, couldn't encode user")
         }
     }
     
@@ -161,7 +177,7 @@ final class GameViewModel: ObservableObject {
         do {
             currentUser = try JSONDecoder().decode(User.self, from: userData)
         } catch {
-            print("no user saved")
+            print("Error, no user saved")
         }
     }
  

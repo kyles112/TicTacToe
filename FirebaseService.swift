@@ -58,8 +58,6 @@ final class FirebaseService: ObservableObject {
     
     func listeningForGameChanges() {
         FirebaseReference(.Game).document(self.game.id).addSnapshotListener { documentSnapshot, error in
-            print("Change received from Firebase")
-            
             if error != nil {
                 print("Error listending to changes", error?.localizedDescription)
                 return
@@ -73,8 +71,6 @@ final class FirebaseService: ObservableObject {
     
     func createNewGame(with userId: String) {
         //create new game object
-        print("Creating game for userid", userId)
-        
         self.game = Game(id: UUID().uuidString, player1Id: userId, player2Id: "", blockMoveForPlayerId: userId, winningPlayerId: "", rematchPlayerId: [], moves: Array(repeating: nil, count: 9))
         self.createOnlineGame()
         self.listeningForGameChanges()
